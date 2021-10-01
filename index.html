@@ -5,39 +5,12 @@
 </head>
 </head>
 <body>
-<script>
-setInterval(dateFunktion,1000);
-function dateFunktion(){
-    const d= new Date();
-    document.getElementById("timer").innerHTML = d.toLocaleTimeString();
-    document.getElementById("date").innerHTML = d.toLocaleDateString();
-    }
-/* Weather */
-funktion WeatherData(){
-    weatherSiteLink = "https://api.openweathermap.org/data/2.5/weather?q=freiburg&units=metric&apikey=55218528e65960e07b1d793baff27503";
-    var request = new XMLHttpRequest();
-    request.open('GET',weatherSiteLink,true);
-    request,onLoad = function weather(){
-
-    var jsonObject = JSON.parse(this.response);
-    if (request.status >= 200 && request.status <400)
-    {
-    var weather = jsonObject.weather.main;
-    }
-    else
-    {
-    console.log("City doesn't exist");
-    }
-    document.getElementById("weather").innerHTML = weather;
-    }
-    request.send();
-}
-</script>
+<script src = "Scripts.js" type="text/javascript"></script>
 <title id="Title"> Home Page </title>
 <h1> Home Page </h1>
 <h2 id="timer"></h2>
 <h3 id="date"></h2>
-<h4 id="weather"></h4>
+<h4 id="temp"></h4>
 
 </body>
 </html>
