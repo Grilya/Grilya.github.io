@@ -13,7 +13,19 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-h1{
+h1
+{
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    width:100%;
+    text-align:right;
+    font-size: 100px;
+    text-shadow: 4px 4px 20px white;
+}
+
+h2{
  color: white;
  font-family: 'Anglorunic',Serif;
  margin: 0;
@@ -22,10 +34,9 @@ h1{
  width:50%;
  text-align:center;
  font-size: 120px;
- border-style:solid;
- border-width:0px 0px 20px 0px;
+ text-decoration:underline;
 }
-h2{
+p1{
  color: lightgrey;
  font-family: 'Anglorunic',Serif;
  margin: 0;
@@ -35,7 +46,7 @@ h2{
  text-align: center;
  font-size: 60px;
 }
-h3{
+p2{
  color: lightgrey;
  font-family: 'Anglorunic',Serif;
  margin: 0;
@@ -46,13 +57,14 @@ h3{
  font-size: 60px;
 }
 
-h4{
+p3{
  color: white;
  font-family: 'Anglorunic',Serif;
  margin: 0;
  position: absolute;
- top: 80%;
+ top: 60%;
  width: 50%;
  text-align: center;
  font-size: 60px;
+ text-decoration:overline;
 }

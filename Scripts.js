@@ -1,4 +1,5 @@
 /*Weather*/
+    const weatherArray = ["♫꒰･‿･๑꒱", "꒰｡•`ｪ´•｡꒱۶" ];
     var weather;
     var currentTemp;
 
@@ -9,8 +10,17 @@
     weather = data.weather[0].main;
     currentTemp = data.main.temp;
     console.log(data.weather[0].main);
+    switch(weather)
+        {
+            case "Clouds": document.getElementById("weather").innerHTML = weatherArray[0];
+            break;
+            case "Storm": document.getElementById("weather").innerHTML = weatherArray[1];
+            break;
+            default:
+            break;
+        }
 
-    document.getElementById("temp").innerHTML= weather +"  " +currentTemp;
+    document.getElementById("temp").innerHTML= "Current Temp: " +currentTemp;
     }
     /*Date Funktion*/
     setInterval(dateFunktion,500);
