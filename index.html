@@ -2,14 +2,23 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="Page.css" media="screen" />
-<script type="text/javascript" src="Scripts.js"></script>
 </head>
 </head>
 <body>
+<script>
+setInterval(dateFunktion,1000);
 
+function dateFunktion(){
+    const d= new Date();
+    document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+    document.getElementById("date").innerHTML = d.toLocaleDateString();
+    }
+</script>
 <title id="Title"> Home Page </title>
 <h1> Home Page </h1>
-<h2> script.time</h2>
+<h2 id="timer"></h2>
+<h3 id="date"></h2>
+
 </body>
 </html>
 
