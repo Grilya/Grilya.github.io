@@ -25,7 +25,7 @@
             break;
         }
 
-    document.getElementById("temp").innerHTML= "Current Temp: " +currentTemp;
+    document.getElementById("temp").innerHTML= "Current Temp:" +currentTemp + "°";
     }
     /*Date Funktion*/
     setInterval(dateFunktion,500);
