@@ -1,5 +1,6 @@
 /*Weather*/
-    const weatherArray = ["♫꒰･‿･๑꒱", "꒰｡•`ｪ´•｡꒱۶" ];
+/*12 Characters max*/
+    const weatherArray = ["꒰•ᴗ•꒱  ꒰•ᴗ•꒱  ꒰•ᴗ•꒱  ꒰•ᴗ•꒱  ꒰•ᴗ•꒱ ꒰•ᴗ•꒱", "꒰•`´•꒱ ꒰•`´•꒱ ꒰•`´•꒱ ꒰•`´•꒱ ꒰•`´•꒱","｀ヽ｀ヽ｀、ヽ(ノ＞＜)ノ ｀、ヽ｀ヽ｀" ];
     var weather;
     var currentTemp;
 
@@ -16,7 +17,11 @@
             break;
             case "Storm": document.getElementById("weather").innerHTML = weatherArray[1];
             break;
+            case "Rain":
+            document.getElementById("weather").innerHTML = weatherArray[2];
+            break;
             default:
+            document.getElementById("weather").innerHTML = "Add new Weather!!!"
             break;
         }
 
