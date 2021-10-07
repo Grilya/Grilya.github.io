@@ -40,3 +40,6 @@
     document.getElementById("timer").innerHTML = d.toLocaleTimeString();
     document.getElementById("date").innerHTML = d.toLocaleDateString();
     }
+    /*Walking animation routine*/
+    /*determines when to switch between 2 animations(going-left and going-right)*/
+    var circle;

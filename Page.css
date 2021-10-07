@@ -72,36 +72,36 @@ img {
     object-position: 100% 100%;
 }
 div.moving_Picture{
-    position:absolute;
+    position:fixed;
     left: -5%;
-    bottom: 0%;
+    bottom: 0;
     width:100%;
     heigh:100%;
-    animation-name:stationary_Picture;
-    animation-iteration-count: 2;
 }
 div.stationary_Picture{
-     position:fixed;
+    position:fixed;
     bottom:0;
     left:-3%;
     width:100%;
     heigh:100%;
 }
 @keyframes moving{
-    0% {left:-5%;bottom:0%;}
-    10% {left:0%;bottom:0%;}
-    20% {left:5%;bottom:0%;}
-    30% {left:10%;bottom:0%;}
-    40% {left:15%;bottom:0%;}
-    50% {left:20%;bottom:0%;}
-    60% {left:25%;bottom:0%;}
-    70% {left:30%;bottom:0%;}
-    80% {left:35%;bottom:0%;}
-    90% {left:40%;bottom:0%;}
-    100% {left:45%;bottom:0%;}
+    0%  {left:10%;bottom:-31%;}
+    10% {left:15%;bottom:-31%;}
+    20% {left:20%;bottom:-31%;}
+    30% {left:25%;bottom:-31%;}
+    40% {left:30%;bottom:-31%;}
+    50% {left:35%;bottom:-31%;}
+    60% {left:40%;bottom:-31%;}
+    70% {left:45%;bottom:-31%;}
+    80% {left:50%;bottom:-31%;}
+    90% {left:55%;bottom:-31%;}
+    100%{left:60%;bottom:-31%;}
 }
 img.walking_Picture {
     position:relative;
+    left: -5%;
+    bottom:0;
     animation-name:moving;
     animation-duration:20s;
 }
