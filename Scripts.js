@@ -13,15 +13,19 @@
     console.log(data.weather[0].main);
     switch(weather)
         {
-            case "Clouds": document.getElementById("weather").innerHTML = weatherArray[0];
-            break;
+            case "Clouds":
+            document.getElementById("weather").style.backgroundImage = "url('Images/Pixel_Cloud.png')";
+            /*
+                document.getElementById("weather").innerHTML = weatherArray[0];
+            */
+                break;
             case "Storm": document.getElementById("weather").innerHTML = weatherArray[1];
             break;
             case "Rain":
-            document.getElementById("weather").innerHTML = weatherArray[2];
+            document.getElementById("weather").style.backgroundImage = "url('Images/Rain_Cloud.png')";
             break;
             default:
-            document.getElementById("weather").innerHTML = "Add new Weather!!!"
+            document.getElementById("weather").style.backgroundImage = "Add new Weather!!!"
             break;
         }
 

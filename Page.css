@@ -21,7 +21,6 @@ h1
     position: absolute;
     top: 0%;
     width:100%;
-    text-align:center;
     font-size: 80px;
     text-shadow: 4px 4px 20px white;
 }
@@ -66,4 +65,23 @@ p3{
  width: 50%;
  text-align: center;
  font-size: 40px;
+}
+img {
+    width:300px;
+    height:200px;
+    object-position: 100% 100%;
+}
+div.moving_Picture{
+    position:absolute;
+    top:80%;
+    right:80%;
+    width:100%;
+    heigh:100%;
+}
+div.stationary_Picture{
+     position:fixed;
+    bottom:0;
+    left:-3%;
+    width:100%;
+    heigh:100%;
 }
