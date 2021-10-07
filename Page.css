@@ -66,42 +66,68 @@ p3{
  text-align: center;
  font-size: 40px;
 }
-img {
-    width:300px;
-    height:200px;
-    object-position: 100% 100%;
+/*Images*/
+#stationary{
+    position: fixed;
+    width:250px;
+    height:180px;
+    bottom:18%;
+    left:37%;
+    transform: scaleX(-1);
 }
-div.moving_Picture{
+div.stationary_Picture{
     position:fixed;
-    left: -5%;
+    bottom:19%;
+    left:0%;
+    width:100%;
+    heigh:100%;
+}
+/*Walking*/
+.walking_right {
+    width:300px;
+    height:150px;
+    position:relative;
+    left: 0%;
+    bottom:-31.75%;
+
+    animation-duration:20s;
+    animation-name:movingright;
+    animation-delay: 0;
+    animation-direction:alternate;
+}
+.walking_left {
+    width:300px;
+    height:150px;
+    position:relative;
+    right: 0%;
+    top:0%;
+
+    animation-duration:20s;
+    animation-name:movingleft;
+    animation-delay: 0;
+    animation-direction:alternate;
+}
+.moving_Picture_right{
+    position:fixed;
+    left: 0;
     bottom: 0;
     width:100%;
     heigh:100%;
 }
-div.stationary_Picture{
+.moving_Picture_left{
     position:fixed;
-    bottom:0;
-    left:-3%;
+    right: 0%;
+    top: -6%;
     width:100%;
     heigh:100%;
+    transform: scale(-1,-1);
+
 }
-@keyframes moving{
-    0%  {left:10%;bottom:-31%;}
-    10% {left:15%;bottom:-31%;}
-    20% {left:20%;bottom:-31%;}
-    30% {left:25%;bottom:-31%;}
-    40% {left:30%;bottom:-31%;}
-    50% {left:35%;bottom:-31%;}
-    60% {left:40%;bottom:-31%;}
-    70% {left:45%;bottom:-31%;}
-    80% {left:50%;bottom:-31%;}
-    90% {left:55%;bottom:-31%;}
-    100%{left:60%;bottom:-31%;}
+@keyframes movingright{
+    0%  {left:-25%;bottom:-31.75%;}
+    100%{left:125%;bottom:-31.75%;}
 }
-img.walking_Picture {
-    position:relative;
-    left: -5%;
-    bottom:0;
-    animation-name:moving;
-    animation-duration:20s;
+@keyframes movingleft{
+    0%{left:-25%;top:0%;}
+    100%{left:125%;top:0%;}
 }

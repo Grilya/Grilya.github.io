@@ -1,5 +1,5 @@
-/*Weather*/
-/*12 Characters max*/
+//Weather
+//12 Characters max
     const weatherArray = ["꒰•ᴗ•꒱  ꒰•ᴗ•꒱  ꒰•ᴗ•꒱  ꒰•ᴗ•꒱  ꒰•ᴗ•꒱ ꒰•ᴗ•꒱", "꒰•`´•꒱ ꒰•`´•꒱ ꒰•`´•꒱ ꒰•`´•꒱ ꒰•`´•꒱","｀ヽ｀ヽ｀、ヽ(ノ＞＜)ノ ｀、ヽ｀ヽ｀" ];
     var weather;
     var currentTemp;
@@ -10,7 +10,7 @@
     const data = await response.json();
     weather = data.weather[0].main;
     currentTemp = data.main.temp;
-    console.log(data.weather[0].main);
+    //console.log(data.weather[0].main);
     switch(weather)
         {
             case "Clouds":
@@ -31,7 +31,7 @@
 
     document.getElementById("temp").innerHTML= "Current Temp:" +currentTemp + "°";
     }
-    /*Date Funktion*/
+    //Date Funktion
     setInterval(dateFunktion,500);
     setInterval(Weather,500);
 
@@ -40,6 +40,31 @@
     document.getElementById("timer").innerHTML = d.toLocaleTimeString();
     document.getElementById("date").innerHTML = d.toLocaleDateString();
     }
-    /*Walking animation routine*/
+    //Walking animation routine*/
     /*determines when to switch between 2 animations(going-left and going-right)*/
-    var circle;
+    var animation = 0;
+    function wait(){
+    console.log(animation);
+
+        function switchDirection(){
+            if(animation == 0){
+                //first animation
+                var image = document.getElementById("walking");
+                image.className = "walking_right";
+                var div = document.getElementById("moving_div");
+                div.className = "moving_Picture_right";
+                animation=1;
+            }
+            else {
+                //second animation
+                var image = document.getElementById("walking");
+                image.className = "walking_left";
+                var div = document.getElementById("moving_div");
+                div.className = "moving_Picture_left";
+                console.log(div.className);
+                animation = 0;
+            }
+        }
+    switchDirection();
+    setInterval(function(){switchDirection()},20000);
+    }
