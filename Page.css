@@ -9,16 +9,17 @@ body {
     margin: 0;
     background-image: url('background/pixel_Art_Castle.jpg');
     background-origin: content-box;
-    background-position: 100%;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-attachment:fixed;
 }
 h1
 {
     color: white;
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 0%;
     width:100%;
     font-size: 80px;
@@ -29,11 +30,12 @@ h2{
  color: white;
  font-family:"dogicapixel",Cursive,Serif;
  margin: 0;
- position: absolute;
+ position: relative;
  top:20%;
  width:50%;
  text-align:center;
  font-size: 80px;
+
 }
 p1{
  color: lightgrey;
@@ -68,24 +70,25 @@ p3{
 }
 /*Images*/
 #stationary{
-    position: fixed;
-    width:250px;
-    height:180px;
-    bottom:18%;
+    position: relative;
+    height:30%;
+    width:15%;
+    object-position:center bottom;
+    object-fit: cover;
     left:37%;
     transform: scaleX(-1);
 }
 div.stationary_Picture{
     position:fixed;
-    bottom:19%;
+    top: 50%;
     left:0%;
     width:100%;
     heigh:100%;
 }
 /*Walking*/
 .walking_right {
-    width:300px;
-    height:150px;
+    width:25%;
+    height:12.5%;
     position:relative;
     left: 0%;
     bottom:-31.75%;
@@ -96,11 +99,11 @@ div.stationary_Picture{
     animation-direction:alternate;
 }
 .walking_left {
-    width:300px;
-    height:150px;
+    width:25%;
+    height:12.5%;
     position:relative;
     right: 0%;
-    top:0%;
+    bottom: 20%;
 
     animation-duration:20s;
     animation-name:movingleft;
@@ -109,18 +112,20 @@ div.stationary_Picture{
 }
 .moving_Picture_right{
     position:fixed;
-    left: 0;
-    bottom: 0;
+    left: 0%;
+    bottom: 0%;
     width:100%;
-    heigh:100%;
+    heigh:50;
+    object-fit:cover;
 }
 .moving_Picture_left{
     position:fixed;
-    right: 0%;
-    top: -6%;
+    left:0;
+    top: 0;
     width:100%;
     heigh:100%;
     transform: scale(-1,-1);
+    object-fit:cover;
 
 }
 @keyframes movingright{
@@ -128,6 +133,6 @@ div.stationary_Picture{
     100%{left:125%;bottom:-31.75%;}
 }
 @keyframes movingleft{
-    0%{left:-25%;top:0%;}
-    100%{left:125%;top:0%;}
+    0%{left:-25%;top:31.9%;}
+    100%{left:125%;top:31.9%;}
 }

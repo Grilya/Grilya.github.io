@@ -42,7 +42,7 @@
     }
     //Walking animation routine*/
     /*determines when to switch between 2 animations(going-left and going-right)*/
-    var animation = 0;
+    var animation = 1;
     function wait(){
     console.log(animation);
 
