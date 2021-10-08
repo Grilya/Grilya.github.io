@@ -68,6 +68,16 @@ p3{
  text-align: center;
  font-size: 2vw;
 }
+p4{
+ color: white;
+ font-family:"dogicapixel",Cursive,Serif;
+ margin: 0;
+ position: absolute;
+ top: 70%;
+ width: 50%;
+ text-align: center;
+ font-size: 2vw;
+}
 /*Images*/
 #stationary{
     position: relative;
@@ -93,7 +103,7 @@ div.stationary_Picture{
     left: 0%;
     bottom:-31.75%;
 
-    animation-duration:20s;
+    animation-duration:15s;
     animation-name:movingright;
     animation-delay: 0;
     animation-direction:alternate;
@@ -105,7 +115,7 @@ div.stationary_Picture{
     right: 0%;
     bottom: 20%;
 
-    animation-duration:20s;
+    animation-duration:15s;
     animation-name:movingleft;
     animation-delay: 0;
     animation-direction:alternate;
@@ -130,9 +140,9 @@ div.stationary_Picture{
 }
 @keyframes movingright{
     0%  {left:-25%;bottom:-31.75%;}
-    100%{left:125%;bottom:-31.75%;}
+    100%{left:115%;bottom:-31.75%;}
 }
 @keyframes movingleft{
     0%{left:-25%;top:31.9%;}
-    100%{left:125%;top:31.9%;}
+    100%{left:115%;top:31.9%;}
 }
