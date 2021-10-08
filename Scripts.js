@@ -53,7 +53,7 @@
                 image.className = "walking_right";
                 var div = document.getElementById("moving_div");
                 div.className = "moving_Picture_right";
-                animation=1;
+                animation=0;
             }
             else {
                 //second animation
