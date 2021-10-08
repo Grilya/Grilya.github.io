@@ -42,7 +42,7 @@
     }
     //Walking animation routine*/
     /*determines when to switch between 2 animations(going-left and going-right)*/
-    var animation = 1;
+    var animation = 0;
     function wait(){
     console.log(animation);
 
@@ -53,7 +53,7 @@
                 image.className = "walking_right";
                 var div = document.getElementById("moving_div");
                 div.className = "moving_Picture_right";
-                animation=0;
+                animation=1;
             }
             else {
                 //second animation

@@ -113,7 +113,7 @@ div.stationary_Picture{
 .moving_Picture_right{
     position:fixed;
     left: 0%;
-    bottom: 0%;
+    bottom: 0vh;
     width:100%;
     heigh:50;
     object-fit:cover;
@@ -121,7 +121,7 @@ div.stationary_Picture{
 .moving_Picture_left{
     position:fixed;
     left:0;
-    top: 0;
+    top: 0vh;
     width:100%;
     heigh:100%;
     transform: scale(-1,-1);
