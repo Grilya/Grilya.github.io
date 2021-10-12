@@ -42,8 +42,8 @@ p1{
  font-family:"dogicapixel",Cursive,Serif;
  margin: 0;
  position: absolute;
- top: 40%;
- width: 50%;
+ top: 45%;
+ width:50%;
  text-align: center;
  font-size: 2vw ;
 }
@@ -52,7 +52,7 @@ p2{
  font-family:"dogicapixel",Cursive,Serif;
  margin: 0;
  position: absolute;
- top: 50%;
+ top: 55%;
  width: 50%;
  text-align: center;
  font-size: 2vw;
@@ -63,7 +63,7 @@ p3{
  font-family:"dogicapixel",Cursive,Serif;
  margin: 0;
  position: absolute;
- top: 60%;
+ top: 65%;
  width: 50%;
  text-align: center;
  font-size: 2vw;
@@ -73,7 +73,7 @@ p4{
  font-family:"dogicapixel",Cursive,Serif;
  margin: 0;
  position: absolute;
- top: 70%;
+ top: 75%;
  width: 50%;
  text-align: center;
  font-size: 2vw;
