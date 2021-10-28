@@ -94,14 +94,36 @@ div.stationary_Picture{
     left:0%;
     width:100%;
     heigh:100%;
+    z-index:0;
+}
+#gates{
+    position: fixed;
+    height:14.19%;
+    width:14.4%;
+    object-position:center bottom;
+    left:49.1vw;
+    bottom:12.1vw;
+    /*moving the gates on the x-Axis*/
+}
+div.gate_Picture{
+    position:fixed;
+    bottom: 38vh;
+    right:1.75vw;
+    width:40vw;
+    heigh:40vh;
+    z-index:2;
+}
+div.moving_div{
+    z-index:1;
 }
 /*Walking*/
 .walking_right {
     width:6%;
     height:3%;
     position:relative;
-    left: 0%;
-    bottom:0.75%;
+    left: 0vw;
+    bottom:7.1vh;
+    z-index:1;
 
     animation-duration:15s;
     animation-name:movingright;
@@ -120,10 +142,22 @@ div.stationary_Picture{
     animation-delay: 0;
     animation-direction:alternate;
 }
+.walking_inside {
+    width:6%;
+    height:3%;
+    position:relative;
+    left: 0vw;
+    bottom:7.2vh;
+
+    animation-duration:15s;
+    animation-name:movinginside;
+    animation-delay: 0;
+    animation-direction:alternate;
+}
 .moving_Picture_right{
     position:fixed;
     left: 0%;
-    bottom: 6vh;
+    bottom: 5.8vh;
     width:50vw;
     heigh:50vh;
     object-fit:none;
@@ -138,11 +172,31 @@ div.stationary_Picture{
     object-fit:none;
 
 }
+.moving_Picture_inside{
+    position:fixed;
+    left: 0%;
+    bottom: 6.2vh;
+    width:50vw;
+    heigh:50vh;
+    object-fit:none;
+}
 @keyframes movingright{
-    0%  {left:-10vw;bottom:-7.1vh;}
-    100%{left:130vw;bottom:-7.1vh;}
+    0%  {left:-10vw;bottom:-6.1vh;}
+    100%{left:130vw;bottom:-6.1vh;}
 }
 @keyframes movingleft{
-    0%{left:-60vw;top:7.1vh;}
-    100%{left:100vw;top:7.1vh;}
+    0%{left:-60vw;top:6.4vh;}
+    100%{left:80vw;top:6.4vh;}
+}
+@keyframes movinginside{
+    0%  {left:-10vw;bottom:-6.1vh;}
+    20% {left:30vw;bottom:-6.1vh;}
+    40% {left:19vw;bottom:-2vh;}
+    21% {transform:scale(-1,1);}
+    39% {transform:scale(0.9,0.9);}
+    60% {left:28vw;bottom:8vh;}
+    59% {transform:scale(0.7,0.7);}
+    80% {left:40vw;bottom:9vh;}
+    100% {transform:scale(0.5,0.5);}
+    100%{left:55vw;bottom:16vh;}
 }

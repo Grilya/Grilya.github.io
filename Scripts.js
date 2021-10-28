@@ -40,7 +40,7 @@
 
     //Walking animation routine*/
     /*determines when to switch between 2 animations(going-left and going-right)*/
-    var animation = 0;
+    var animation = 2;
     function wait(){
     console.log(animation);
 
@@ -53,18 +53,26 @@
                 div.className = "moving_Picture_right";
                 animation=1;
             }
-            else {
+            else if(animation == 1) {
                 //second animation
                 var image = document.getElementById("walking");
                 image.className = "walking_left";
                 var div = document.getElementById("moving_div");
                 div.className = "moving_Picture_left";
                 console.log(div.className);
+                animation = 2;
+            } else {
+                //third animation
+                var image = document.getElementById("walking");
+                image.className = "walking_inside";
+                var div = document.getElementById("moving_div");
+                div.className = "moving_Picture_inside";
+                console.log(div.className);
                 animation = 0;
             }
         }
     switchDirection();
-    setInterval(function(){switchDirection()},8000);
+    setInterval(function(){switchDirection()},15000);
     }
     //Funktions that are executed at start
     function onLoad(){
