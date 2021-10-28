@@ -97,11 +97,11 @@ div.stationary_Picture{
 }
 /*Walking*/
 .walking_right {
-    width:25%;
-    height:12.5%;
+    width:6%;
+    height:3%;
     position:relative;
     left: 0%;
-    bottom:-31.75%;
+    bottom:0.75%;
 
     animation-duration:15s;
     animation-name:movingright;
@@ -109,8 +109,8 @@ div.stationary_Picture{
     animation-direction:alternate;
 }
 .walking_left {
-    width:25%;
-    height:12.5%;
+    width:6%;
+    height:3%;
     position:relative;
     right: 0%;
     bottom: 20%;
@@ -123,26 +123,26 @@ div.stationary_Picture{
 .moving_Picture_right{
     position:fixed;
     left: 0%;
-    bottom: 0vh;
-    width:100%;
-    heigh:50;
-    object-fit:cover;
+    bottom: 6vh;
+    width:50vw;
+    heigh:50vh;
+    object-fit:none;
 }
 .moving_Picture_left{
     position:fixed;
     left:0;
-    top: 0vh;
-    width:100%;
-    heigh:100%;
+    top: 6vh;
+    width:50vw;
+    heigh:50vh;
     transform: scale(-1,-1);
-    object-fit:cover;
+    object-fit:none;
 
 }
 @keyframes movingright{
-    0%  {left:-25%;bottom:-31.75%;}
-    100%{left:115%;bottom:-31.75%;}
+    0%  {left:-10vw;bottom:-7.1vh;}
+    100%{left:130vw;bottom:-7.1vh;}
 }
 @keyframes movingleft{
-    0%{left:-25%;top:31.9%;}
-    100%{left:115%;top:31.9%;}
+    0%{left:-60vw;top:7.1vh;}
+    100%{left:100vw;top:7.1vh;}
 }
